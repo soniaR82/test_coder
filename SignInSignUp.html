@@ -6,225 +6,231 @@
       <title></title>
       <!-- <link rel="stylesheet"  href="css/bootstrap.min.css"> -->
       <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="./css/style.css">
-      <style>
-         
-      </style>
+       <link id="pagestyle" rel="stylesheet" type="text/css" href="./css/style.css">
+<script>
+function swapStyleSheet(sheet){
+   document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+      
    </head>
    <body>
       <nav class="navbar navbar-expand-sm navbar-blue bg-blue">
-    <div class="container">
-  <a href="" itemprop="url">
-<img src="images/logo3.png" alt=""   class="img_logo" />
- 
-</a>
-
-
-  <div class="logo">
-  <a class="navbar-brand" href="#">TestCoder</a>
- <h6>Automated skill testing</h6>
- </div>
-  
-  
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      
-
-    </ul>
-    
-      <ul class="navbar-nav navbar-right">
-    <li class="nav-item">
-               <a class="nav-link" href="#">Tour</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="Tests.html">Tests</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="question.html">Question</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="jobseeker.html">For Jobseekers</a>
-            </li>
-            <li class="">
-      <form action="home.html" method="post">
-               <a class="nav-link" href="SignInSignUp">Sign in</a>
-         
-            </li>
-  </ul>
-  </div>
-</div>
-</nav>
-<div class="container">
-    <section class="section_contain">
-         <div class="Informessage-box mtop" id="Informessage-box">
-            <div class="alert alert-success alert-dismissable ">
-               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-               Great, you have created a 20min test with 2 questions. Use the options below to sign in or to create a new account.
+         <div class="container">
+            <a href="" itemprop="url">
+            <img src="images/logo3.png" alt=""   class="img_logo" />
+            </a>
+            <div class="logo">
+               <a class="navbar-brand" href="#">TestCoder</a>
+               <h6 class="automated">Automated skill testing</h6>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+               </ul>
+               <ul class="navbar-nav navbar-right">
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Tour</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="Tests.html">Tests</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="question.html">Question</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="jobseeker.html">For Jobseekers</a>
+                  </li>
+                  <li class="">
+                     
+                        <a class="nav-link" href="SignInSignUp.html">Sign in</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Themes
+                    </a>
+                    <div class="dropdown-menu">
+                     <button id="var_rush" class="btn btn-block" onclick="swapStyleSheet('./css/dark.css')">Ver_rush_green</button>
+                     <button id="var_rush" class="btn btn-block" onclick="swapStyleSheet('./css/blue.css')">Blue_bright_lepsi</button>
+                     <button id="var_rush" class="btn btn-block" onclick="swapStyleSheet('./css/default.css')">Default_blue_red</button>
+                     <button id="var_rush" class="btn btn-block" onclick="swapStyleSheet('./css/style.css')">Default</button>
+                    </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container">
+      <section class="section_contain">
+      <div class="Informessage-box mtop" id="Informessage-box">
+      <div class="alert alert-success alert-dismissable ">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      Great, you have created a 20min test with 2 questions. Use the options below to sign in or to create a new account.
+      </div>
+      </div>
+      </div>
+      </section>
+      <div class="container">
+      <section class="section_contain">
+      <div class="row">
+      <div class="col-sm-1">
+      </div>
+      <!-- <div class="signin"> -->
+      <div class="col-sm-4 signin">
+      <form action="" method="post" id="sign">
+      <input type="text" placeholder="Email" class="form-control first_name col-sm-11 ">
+      <input type="password" placeholder="Password" class="form-control first_name col-sm-11 ">
+      <div class="form-group no-margin-top">
+      <div class="col-xs-10 col-xs-offset-1 text-right forget">
+      <small>
+      <a href="/account/forgot-password">Forgot your password?</a>
+      </small>
+      </div>
+      </div>
+      <center><input type="submit" name="Submit" value="Sign in" class="btn btn-lg btn1 btn-primary  btn-block"  id="button" /><center>
+      </center>
+      </div>
+      <!-- </div> -->
+      <div class="col-sm-2">
+      <center><h3>OR</h3></center>
+      </div>
+      <!-- <div class="signin"> -->
+      <div class="col-sm-4 signup">
+      <form action="" method="post">
+      <div class="form-group no-margin-top">
+      <div class="text-center">
+      <h3>New User? Sign up</h3>
+      <em>For companies only</em>
+      </div>
+      </div>
+      <input type="text" placeholder="First name" class="form-control first_name col-sm-11 " >
+      <input type="password" placeholder="Last name" class="form-control first_name col-sm-11 " id="first_name">
+      <input type="password" placeholder="Company email" class="form-control first_name col-sm-11 ">
+      <input type="password" placeholder="Confirm password" class="form-control first_name col-sm-11 ">
+      <input type="password" placeholder="Phone number" class="form-control first_name col-sm-11 ">
+      <input type="password" placeholder="Comapany name" class="form-control first_name col-sm-11">
+      <input type="password" placeholder="Company URL" class="form-control first_name col-sm-11">
+      <select class="form-control placeholder first_name col-sm-11" data-val-length-max="50" data-val-required="The country is required." id="Country" name="Country">
+      <option disabled="disabled" selected="selected" value="">Country</option>
+      <option value="Afghanistan">Afghanistan</option>
+      <option value="Albania">Albania</option>
+      <option value="Algeria">Algeria</option>
+      <option value="Andorra">Andorra</option>
+      <option value="Angola">Angola</option>
+      <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+      <option value="Argentina">Argentina</option>
+      <option value="Armenia">Armenia</option>
+      <option value="Bahamas">Bahamas</option>
+      <option value="Bahrain">Bahrain</option>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="Barbados">Barbados</option>
+      <option value="Belarus">Belarus</option>
+      <option value="Belgium">Belgium</option>
+      </select>
+      <div class="row">
+      <div class="col-sm-12 first_name">
+      <div class="form-group">
+      <div class="col-sm-12">
+      <p><input type="checkbox" name="checkbox"> I agree with the <a href="/legal/terms-and-conditions" target="_blank">terms and conditions</a>, the <a href="/legal/data-processing-agreement" target="_blank">data processing agreement</a>, and the <a href="/legal/privacy-policy" target="_blank">privacy policy</a>.</p>
+      </div>
+      <!-- <label class="text-normal" class="col-sm-8">
+         I agree with the <a href="/legal/terms-and-conditions" target="_blank">terms and conditions</a>, the <a href="/legal/data-processing-agreement" target="_blank">data processing agreement</a>, and the <a href="/legal/privacy-policy" target="_blank">privacy policy</a>.
+         </label> -->
+      </div>
+      </div>
+      </div>
+      <input type="submit" name="Submit" value="Sign Up for TestCoder" class="btn btn-lg btn-primary first_name btn-block" id="button" />
+      </form>
+      </div>
+      </div>
+      <!-- </div> -->
+      <div class="col-sm-1">
+      </div>
+      </section>
+      </div>
+      <div class="footer">
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-6">
+                     <div class="form-inline">
+                        <div class="col-sm-2">
+                           <h5>explore</h5>
+                        </div>
+                        <div class="col-sm-10">
+                           <a class="link" href="#">Tour</a>
+                           <a class="link" href="#">Test</a>
+                           <a class="link" href="#">Question</a>
+                           <a class="link" href="#">For Jobseekers</a>
+                           <a class="link" href="#">Question</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-inline">
+                     <div class="col-sm-12">
+                     </div>
+                  </div>
+                  <div class="form-inline">
+                     <div class="col-sm-12" >
+                        <a class="link" href="#" id="back" >Back To Top</a>
+                     </div>
+                  </div>
+                  <div class="col-sm-1"></div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-6">
+                     <div class="form-inline">
+                        <div class="col-sm-2">
+                           <h5>LEGAL</h5>
+                        </div>
+                        <div class="col-sm-10">
+                           <a class="link" href="#">Term of Use</a>
+                           <a class="link" href="#">Privacy Policy</a>
+                           <a class="link" href="#">Contact Us</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-6">
+                     <div class="form-inline">
+                        <div class="col-sm-2">
+                           <div class="col-sm-10">
+                              @TestCoder
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-    </section>
-      <div class="container">
-  <section class="section_contain">
-  <div class="row">
-    <div class="col-sm-1">
-      
-    </div>
-    <!-- <div class="signin"> -->
-    <div class="col-sm-4 signin">
-<form action="" method="post" id="sign">
-      <input type="text" placeholder="Email" class="form-control first_name col-sm-11 "><br>
-      <input type="password" placeholder="Password" class="form-control first_name col-sm-11 ">
-      <div class="form-group no-margin-top">
-                        <div class="col-xs-10 col-xs-offset-1 text-right forget">
-                           <small>
-                           <a href="/account/forgot-password">Forgot your password?</a>
-                           </small>
-                        </div>
-                     </div><br>
-      <center><input type="submit" name="Submit" value="Sign in" class="btn btn-lg btn1 btn-primary  btn-block"  id="button" /><center>
-      </center>
-                        </div>
-      
-
-    <!-- </div> -->
-  
-    <div class="col-sm-2">
-      <center><h3>OR</h3></center>
-    </div>
-    <!-- <div class="signin"> -->
-    <div class="col-sm-4 signup">
-      <form action="" method="post">
-        <div class="form-group no-margin-top">
-                        <div class="text-center">
-                           <h3>New User? Sign up</h3>
-                           <em>For companies only</em>
-                        </div>
-                     </div>
-      <input type="text" placeholder="First name" class="form-control first_name col-sm-11 " ><br>
-      <input type="password" placeholder="Last name" class="form-control first_name col-sm-11 " id="first_name"><br>
-      <input type="password" placeholder="Company email" class="form-control first_name col-sm-11 "><br>
-      <input type="password" placeholder="Confirm password" class="form-control first_name col-sm-11 "><br>
-      <input type="password" placeholder="Phone number" class="form-control first_name col-sm-11 "><br>
-      <input type="password" placeholder="Comapany name" class="form-control first_name col-sm-11"><br>
-      <input type="password" placeholder="Company URL" class="form-control first_name col-sm-11"><br>
-      <select class="form-control placeholder first_name col-sm-11" data-val-length-max="50" data-val-required="The country is required." id="Country" name="Country">
-         <option disabled="disabled" selected="selected" value="">Country</option>
-                              <option value="Afghanistan">Afghanistan</option>
-                              <option value="Albania">Albania</option>
-                              <option value="Algeria">Algeria</option>
-                              <option value="Andorra">Andorra</option>
-                              <option value="Angola">Angola</option>
-                              <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                              <option value="Argentina">Argentina</option>
-                              <option value="Armenia">Armenia</option>
-                                 <option value="Bahamas">Bahamas</option>
-                              <option value="Bahrain">Bahrain</option>
-                              <option value="Bangladesh">Bangladesh</option>
-                              <option value="Barbados">Barbados</option>
-                              <option value="Belarus">Belarus</option>
-                              <option value="Belgium">Belgium</option>
-                          </select><br>
-                          
-                          <div class="row">
-
-                            
-                              <div class="col-sm-12">
-                   
-                    <p><input type="checkbox" name="checkbox">I agree with the <a href="/legal/terms-and-conditions" target="_blank">terms and conditions</a>, the <a href="/legal/data-processing-agreement" target="_blank">data processing agreement</a>, and the <a href="/legal/privacy-policy" target="_blank">privacy policy</a>.</p>
-                </div>
-                  <!-- <label class="text-normal" class="col-sm-8">
-                                    I agree with the <a href="/legal/terms-and-conditions" target="_blank">terms and conditions</a>, the <a href="/legal/data-processing-agreement" target="_blank">data processing agreement</a>, and the <a href="/legal/privacy-policy" target="_blank">privacy policy</a>.
-                                    </label> -->
-
-                              
-                       </div>
-      <input type="submit" name="Submit" value="Sign Up for TestCoder" class="btn btn-lg btn-primary first_name btn-block" id="button" />
-    </form>
-                        </div>
-      </div>
-    <!-- </div> -->
-  
 
 
-    <div class="col-sm-1">
-      
-    </div>
-  
+<script>
+   document.getElementById('change-theme-btn').addEventListener('click', function () {
+    let darkThemeEnabled = document.body.classList.toggle('navbar_theme');
+    localStorage.setItem('navbar_theme-enabled', darkThemeEnabled);
+});
 
-</section>
-</div>
-
-      <div class="footer">
-      <div class="row">
-       <div class="col-sm-12">
-        <div class="row">
-           <div class="col-sm-1"></div>
-           <div class="col-sm-6">
-            <div class="form-inline">
-             <div class="col-sm-2">
-              <h5>explore</h5>
-             </div>
-             <div class="col-sm-10">
-              <a class="link" href="#">Tour</a>
-              <a class="link" href="#">Test</a>
-              <a class="link" href="#">Question</a>
-              <a class="link" href="#">For Jobseekers</a>
-              <a class="link" href="#">Question</a>
-             </div>
-            </div>
-           </div>
-           <div class="form-inline">
-            <div class="col-sm-12">
-            </div>
-           </div>
-           <div class="form-inline">
-            <div class="col-sm-12" >
-             <a class="link" href="#" id="back" >Back To Top</a>
-            </div>
-           </div>
-           <div class="col-sm-1"></div>
-        </div>
-       </div>
-      </div>
-      <div class="row">
-       <div class="col-sm-12">
-        <div class="row">
-           <div class="col-sm-1"></div>
-           <div class="col-sm-6">
-            <div class="form-inline">
-             <div class="col-sm-2">
-              <h5>LEGAL</h5>
-             </div>
-             <div class="col-sm-10">
-              <a class="link" href="#">Term of Use</a>
-              <a class="link" href="#">Privacy Policy</a>
-              <a class="link" href="#">Contact Us</a>
-             </div>
-            </div>
-           </div>
-        </div>
-        <div class="row">
-           <div class="col-sm-1"></div>
-           <div class="col-sm-6">
-            <div class="form-inline">
-             <div class="col-sm-2">
-              <div class="col-sm-10">
-                 @TestCoder
-              </div>
-             </div>
-            </div>
-           </div>
-        </div>
-       </div>
-      </div>
-    </div>
+if (JSON.parse(localStorage.getItem('navbar_theme-enabled'))) {
+    document.body.classList.add('navbar_theme');
+}
+</script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
    </body>
 </html>

@@ -1,6 +1,6 @@
 		.navbar
 		{
-			background-color:#2d283e;
+			background-color:#222546;
 		
 		}
 		
@@ -23,22 +23,22 @@
 		}
 		.nav-link
 		{
-		color:#802ab8;
+		color:#2d9cca;
 		}
 		.nav-link:hover
 		{
-		color:white;
+		color:#2d9cca;
 		text-decoration: underline;
 		}
 		.navbar-brand
 		{
-		color:#802ab8;
+		color:#2d9cca;
 		}
 
 		.automated
 		{
 			font-size:12px;
-			color:#802ab8;
+			color:#2d9cca;
 		}
 		.signin
 		{
@@ -136,10 +136,6 @@
 		 border:solid lightblue;
 		 border-radius: 10px;
 		}
-		#var_rush
-		{
-			background-color: white;
-		}
 		.bold
 		{
 			font-size:20px;
@@ -153,5 +149,4 @@
 		{
 			display: none;
 		}
-
 		 	
